@@ -1,0 +1,36 @@
+{
+    "name": "laraboy/lara-qrcode",
+    "description": "A flexible and advanced QR Code generator for Laravel applications.",
+    "type": "library",
+    "version": "1.0.0", 
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Laraboy\\LaraQrcode\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Enabs",
+            "email": "davidenabs@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "bacon/bacon-qr-code": "^3.0",
+        "illuminate/support": "^11.33",
+        "illuminate/console": "^11.33"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaraBoy\\LaraQrcode\\QrCodeServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
